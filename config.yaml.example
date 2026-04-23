@@ -1,0 +1,23 @@
+# Lidl Connect Toolkit Konfiguration
+# Kopiere diese Datei nach ~/.config/lidl-connect/config.yaml
+# und trage deine Daten ein
+
+# Lidl Connect Zugangsdaten
+username: "DEINE_TELEFONNUMMER"  # z.B. "015123456789"
+password: "DEIN_PASSWORT"        # Dein Lidl Connect Passwort
+
+# Telegram Bot (für Benachrichtigungen)
+# 1. Schreibe @BotFather auf Telegram und erstelle einen Bot
+# 2. Kopiere den Token hier rein
+telegram_token: "DEIN_TELEGRAM_BOT_TOKEN"  # z.B. "123456789:ABCdefGHIjklMNOpqrsTUVwxyz"
+
+# 3. Schreibe @userinfobot auf Telegram und hole deine Chat-ID
+telegram_chat_id: "DEINE_TELEGRAM_CHAT_ID"  # z.B. "123456789"
+
+# Einstellungen
+min_volume_gb: 0.5        # Nachbuchen unter 500MB
+check_interval: 300       # Prüfung alle 5 Minuten (in Sekunden)
+headless: true            # Browser unsichtbar im Hintergrund
+
+# Optional: Cookie-Speicherort (normalerweise nicht ändern)
+cookie_file: "/tmp/lidl_connect_cookies.json"

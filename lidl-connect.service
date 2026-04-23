@@ -1,0 +1,15 @@
+[Unit]
+Description=Lidl Connect Refill Monitor
+After=network.target
+
+[Service]
+Type=simple
+User=%I
+WorkingDirectory=/home/%I/lidl-connect-toolkit
+ExecStart=/usr/bin/python3 -m lidl_connect.monitor
+Restart=always
+RestartSec=60
+Environment="PYTHONUNBUFFERED=1"
+
+[Install]
+WantedBy=multi-user.target
